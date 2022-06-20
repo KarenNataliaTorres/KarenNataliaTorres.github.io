@@ -1,0 +1,419 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');/*font-family: italiana*/
+
+/*REM HTML */
+html{
+    font-size: 18px;
+    font-family: italiana;
+}
+
+/*CONFIGURACIONES COMUNES DEL BODY*/
+body {
+    background-color:#73A875 ;
+    font-family: italiana;
+    color: white;
+}
+.fondoComun{/* fondo aplicado a algunos submenus*/
+    background-color: #DDE7A1;
+    color: rgb(35, 35, 35); ;
+}
+
+/*ETIQUETA QUE MODIFICA HIPERVINCULOS*/
+a {
+    text-decoration: none;
+    color:#DDE7A1;
+}
+
+/* CONFIGURACIONES HEADER LOGO Y BARRA MENU PARA TODAS LAS PAGINAS*/
+.header-contenedor{
+    display: grid;
+    grid-template-columns:600px 720px;
+    grid-template-rows: 86px;
+    align-items: center;
+    align-content: center;
+}
+.header-logo{
+    font-family: italiana;
+    font-size: 22px;    
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.header-menu li{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    position: relative;
+    border: 1px solid #4E7E50 ;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #4E7E50;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+}
+.header-menu li ul{
+    position: absolute;
+    display: none;   
+    padding-top: 30px; 
+}
+.header-menu li ul li{
+    display: block;
+}
+/*.header-menu li:hover ul{       SI ACTIVO EL HOVER NO ME DEJA HACER CLICK EN EL LINK
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+}*/
+
+.header-submenu-productos li{
+    height: 40px;
+    text-align: center;
+    justify-items: left;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    
+}
+/*CONFIGURACIÓN FOOTER*/
+footer{
+    height: 50px;
+}
+
+/*PAGINA INICIO CONFIGURACIÓN PORTADA */
+.portada {
+    background-image:url(https://cdn.pixabay.com/photo/2019/12/08/21/10/potter-4682257_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 40%;
+    text-align: center;
+    text-align-last: center;
+    height: 500px;
+    color: beige;
+    background-color: #DDE7A1;
+    padding-top: 150px;
+
+}
+.portada__titulo{
+    font-size: 80px;
+    border-top: 5px double white ;
+    border-bottom: 5px double white ;
+}
+.portada__parrafo{
+    font-size: 40px;
+}
+/*PAGINA INICIO CONFIGURACIÓN PORTADA  MOBILE RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width:390px) {
+    .portada__titulo{
+        font-size: 50px;  
+    }
+    .portada__parrafo{
+        font-size: 30px;
+    }
+    .portada{
+        background-size: cover;
+        text-align: center;
+    }
+    
+}
+
+
+/*CONFIGURACIÓN MENU "SOBRE MI"*/
+
+.main-contenedor{
+    
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.foto1 img{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    
+}
+.foto2 {
+    position: relative;
+    left: 900px;
+    top: 300px;
+}
+.textoSobreMi{
+    padding-left: 40px;
+}
+
+.titulo-sobremi {
+    text-align: center;
+    font-size: 40px;
+}
+/*CONFIGURACIÓN MENU "SOBRE MI" MOBILE RESPONSIVE IPHONE 12PRO*/
+
+@media screen and (max-width:390px) {
+    .main-contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 15px;
+        width: 310px;
+    }
+    .foto1 img{
+        width: 300px;
+        height: auto;
+        position: relative;
+        left: 0%;
+        justify-content: center;
+        padding-left:0px ;
+
+    }
+    .foto2{
+        width: 300px;
+        height: auto;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        justify-content: center;
+        padding-left:0px ;
+    }
+    .textoSobreMi{
+        padding-left: 20px;
+    }
+}
+
+
+/*CONFIGURACIÓN MENU "DECORACIÓN"*/
+main h1{
+    text-align: center;
+    align-items: center;
+    padding:  30px 30px 0px 30px;
+}
+.texto1{
+    grid-area: texto1;
+    border: double 5px white;
+    padding: 60px;
+}
+.texto2{
+    grid-area: texto2;
+    border: double 5px white;
+    padding: 60px;
+}
+.texto3{
+    grid-area: texto3;
+    border: double 5px white;
+    padding: 60px;
+}
+.deco-img1{
+    grid-area: deco-img1;
+    width: 200px;
+    height: auto;
+}
+.deco-img2{
+    grid-area: deco-img2;
+    width: 200px;
+    height: auto;
+}
+.deco-img3{
+    grid-area: deco-img3;
+    width: 200px;
+    height: auto;    
+}
+#grilla-deco{
+    display: grid;
+    grid-template-areas:
+    "texto1 texto1 deco-img1"
+    "deco-img2 texto2 texto2"
+    "texto3 texto3 deco-img3";
+    grid-template-columns: repeat(3,1fr);
+    grid-row: repeat(3,1/2fr);
+    justify-items: center;
+    align-items: center;
+    padding: 0px 50px 50px 50px;
+}
+/*CONFIGURACIÓN MENU "DECORACIÓN" MOBILE RESPONSIVE IPHONE 12PRO*/
+.menu1{
+    grid-area: menu1;
+}
+.menu2{
+    grid-area: menu2;
+}
+.menu3{
+    grid-area: menu3;
+}
+.menu4{
+    grid-area: menu4;
+}
+.menu5{
+    grid-area: menu5;
+}
+.menu6{
+    grid-area: menu6;
+}
+@media screen and (max-width:390px) {
+    #grilla-deco{
+        display: grid;
+        grid-template-areas:
+        "deco-img1"
+        "texto1"   
+        "deco-img2"
+        "texto2"
+        "deco-img3"
+        "texto3";
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    .header-contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .header-logo h1{
+        font-size: 30px;
+    }
+    
+}
+
+
+
+/*CONFIGURACIÓN MENU "TALLERES"*/
+.talleres{
+    background-image: url(https://previews.123rf.com/images/natthanim/natthanim1706/natthanim170600156/81171801-textura-de-pared-de-m%C3%A1rmol-de-fondo-blanco-para-el-trabajo-de-arte-de-dise%C3%B1o-textura-de-piedra-de-fo.jpg?fj=1);
+    text-align: center;
+    height: 600px; 
+    padding-top: 40px;
+}
+.talleres img{
+    height: 100%;
+}
+.talleres-titulo{
+    font-size: 60px;
+    border-top: 5px double black ;
+    border-bottom: 5px double black ;
+    margin-top: 50px;
+    padding: 10px;
+    
+}
+/*CONFIGURACIÓN MENU "TALLERES" MOBILE RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width:390px) {
+    .talleres-titulo{
+        font-size: 60px;
+        border-top: 5px double black ;
+    }
+    
+}
+
+/*CONFIGURACIÓN MENÚ TIENDA*/
+
+/*grilla catálogo productos*/
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    justify-content: center;
+    
+}
+
+/*estilo tarjeta catalogo productos*/
+.tarjeta{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border: solid 1px white;
+    text-align: center;
+
+}
+.boton-comprar:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: solid 2px #DDE7A1;
+    padding: 10px;
+    background-color: grey;
+}
+
+    
+    
+
+/*CONFIGURACIÓN MENÚ TIENDA RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width:390px) {
+    .catalogo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .header-contenedor{
+        flex-direction: column;
+    }
+    
+}
+
+
+/* PAGINA CONTACTO-CONFIGURACIÓN*/
+.contacto {
+    padding: 30px;
+    color: black;
+    text-align: center;
+    background-color: #DDE7A1;
+}
+/* PAGINA CONTACTO-CONFIGURACIÓN RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width:390px) {
+    .contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 15px;
+        padding: 0px;
+        text-align: center;
+    }
+    .formulario{
+        width: 350px;
+    }
+    #comentarios{
+        width: 320px;
+        margin: 20px;
+        
+    }
+    
+}
+
+/*imagen responsive*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* CONFIGURACIÓN RESPONSIVE DESKTOP PARA BARRA MENU Y PARA PAGINA "SOBRE MI"*/
+@media screen and (min-width:391px) and (max-width:1200px) {
+    .header-contenedor{
+        display: grid;
+        grid-template-columns:480px 700px;
+        grid-template-rows: 86px;
+        align-items: center;
+        align-content: center;
+    }  
+    .foto2 {
+        position: relative;
+        left: 750px;
+        top: 300px;
+    }
+    
+}
