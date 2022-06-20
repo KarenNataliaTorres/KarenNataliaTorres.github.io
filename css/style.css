@@ -111,9 +111,17 @@ footer{
     font-size: 80px;
     border-top: 5px double white ;
     border-bottom: 5px double white ;
+    transition: font-size 2s /* transicion para agrandar texto portada*/
+}
+.portada__titulo:hover{
+    font-size: 90px;
 }
 .portada__parrafo{
     font-size: 40px;
+    transition: font-size 2s /* transicion para agrandar texto portada*/
+}
+.portada__parrafo:hover{
+    font-size: 45px;
 }
 /*PAGINA INICIO CONFIGURACIÓN PORTADA  MOBILE RESPONSIVE IPHONE 12PRO*/
 @media screen and (max-width:390px) {
@@ -146,7 +154,11 @@ footer{
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 50px;
-    
+}
+.foto1 img:hover{
+   transform: scale(1.25,1.25);
+   transition: 2s;
+   
 }
 .foto2 {
     position: relative;
@@ -242,6 +254,10 @@ main h1{
     align-items: center;
     padding: 0px 50px 50px 50px;
 }
+#grilla-deco p:hover{
+    background-color: #b08854;
+    transition: 2s;
+}
 /*CONFIGURACIÓN MENU "DECORACIÓN" MOBILE RESPONSIVE IPHONE 12PRO*/
 .menu1{
     grid-area: menu1;
@@ -311,6 +327,16 @@ main h1{
     padding: 10px;
     
 }
+.talleres-titulo:hover{
+    transform: scale(1.20,1.20);
+    transition: 2s;
+ }
+ .talleres p:hover {
+    transform: scale(1.20,1.20);
+    transition: 2s;
+ }
+
+ }
 /*CONFIGURACIÓN MENU "TALLERES" MOBILE RESPONSIVE IPHONE 12PRO*/
 @media screen and (max-width:390px) {
     .talleres-titulo{
@@ -341,15 +367,19 @@ main h1{
     padding: 20px;
     border: solid 1px white;
     text-align: center;
-
 }
+.tarjeta:hover{
+    transform: scale(1.10,1.10);
+    transition: 2s;
+ }
 .boton-comprar:hover{
     background-color: white;
     color: black;
     border-radius: 5px;
     border: solid 2px #DDE7A1;
     padding: 10px;
-    background-color: grey;
+    background-color: rgb(69, 67, 67);
+    background-image: linear-gradient(to left,rgb(237, 222, 222),rgb(69, 67, 67));
 }
 
     
