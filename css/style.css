@@ -8,7 +8,8 @@ html{
 }
 
 /*CONFIGURACIONES COMUNES DEL BODY*/
-body {
+
+.body {
     background-color:#73A875 ;
     font-family: italiana;
     color: white;
@@ -25,72 +26,50 @@ a {
 }
 
 /* CONFIGURACIONES HEADER LOGO Y BARRA MENU PARA TODAS LAS PAGINAS*/
-.header-contenedor{
-    display: grid;
-    grid-template-columns:600px 720px;
-    grid-template-rows: 86px;
-    align-items: center;
-    align-content: center;
-}
-.header-logo{
+
+.logo-emprendimiento{
+    text-decoration: none;
     font-family: italiana;
-    font-size: 22px;    
+    font-size: 40px;    
     align-items: center;
     align-content: center;
     text-align: center;
+    color: #ffffff;
 }
-.header-menu{
-    display: flex;
-    flex-direction: row;
+.estilo-nav {
+    background-color:#73A875;
+    height: 70px;
+    width: auto;
+}
+.header-menu-0{
     justify-content: end;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
-.header-menu li{
-    display: flex;
-    flex-direction: column;
+
+.header-menu{
     list-style-type: none;
-    position: relative;
     border: 1px solid #4E7E50 ;
     border-radius: 5px;
     margin: 2px;
-    padding: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
     background-color: #4E7E50;
-    width: 100px;
-    height: 20px;
     text-align: center;
-    position: relative;
+    justify-content: end;
+    font-size: 20px;
+    height: auto;
 }
-.header-menu li ul{
-    position: absolute;
-    display: none;   
-    padding-top: 30px; 
+.header-menu a{
+    color: #c7ab3ce7;
 }
-.header-menu li ul li{
-    display: block;
+/*RESPONSIVE NAV BAR*/
+@media screen and (max-width:390px) {
+   .logo-emprendimiento{
+    font-size: 23px;
+   }
 }
-/*.header-menu li:hover ul{       SI ACTIVO EL HOVER NO ME DEJA HACER CLICK EN EL LINK
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    text-align: center;
-}*/
 
-.header-submenu-productos li{
-    height: 40px;
-    text-align: center;
-    justify-items: left;
-    width: 100%;
-    margin-top: 10px;
-    align-items: center;
-    
-}
 /*CONFIGURACIÓN FOOTER*/
 footer{
     height: 50px;
+    padding-left: 30px;
 }
 
 /*PAGINA INICIO CONFIGURACIÓN PORTADA */
@@ -128,8 +107,14 @@ footer{
     .portada__titulo{
         font-size: 50px;  
     }
+    .portada__titulo:hover{
+        font-size: 55px;
+    }
     .portada__parrafo{
         font-size: 30px;
+    }
+    .portada__parrafo:hover{
+        font-size: 32px;
     }
     .portada{
         background-size: cover;
@@ -308,7 +293,6 @@ main h1{
 }
 
 
-
 /*CONFIGURACIÓN MENU "TALLERES"*/
 .talleres{
     background-image: url(https://previews.123rf.com/images/natthanim/natthanim1706/natthanim170600156/81171801-textura-de-pared-de-m%C3%A1rmol-de-fondo-blanco-para-el-trabajo-de-arte-de-dise%C3%B1o-textura-de-piedra-de-fo.jpg?fj=1);
@@ -332,17 +316,27 @@ main h1{
     transition: 2s;
  }
  .talleres p:hover {
-    transform: scale(1.20,1.20);
+    transform: scale(1.16,1.16);
     transition: 2s;
  }
 
- }
 /*CONFIGURACIÓN MENU "TALLERES" MOBILE RESPONSIVE IPHONE 12PRO*/
 @media screen and (max-width:390px) {
     .talleres-titulo{
         font-size: 60px;
         border-top: 5px double black ;
     }
+    .talleres p{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .talleres-titulo:hover{
+        transform: scale(1.10,1.10);
+        transition: 2s;
+     }
+     .talleres p:hover {
+        transform: scale(1,1);
+     }
     
 }
 
