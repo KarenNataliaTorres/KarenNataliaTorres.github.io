@@ -126,32 +126,21 @@ footer{
 
 /*CONFIGURACIÓN MENU "SOBRE MI"*/
 
-.main-contenedor{
-    
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.foto1 img{
-    width: 300px;
+
+.fotosfamiliares img{
+    width: 250px;
     height: auto;
-    position: absolute;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
+    padding: 1px;
+    justify-content: center;
+    padding-top: 70px;
+    border-radius: 90%;
 }
-.foto1 img:hover{
-   transform: scale(1.25,1.25);
-   transition: 2s;
-   
+.fotosfamiliares img:hover{
+    transform: scale(1.2,1.2);
+    transition: 2s;
 }
-.foto2 {
-    position: relative;
-    left: 900px;
-    top: 300px;
-}
-.textoSobreMi{
-    padding-left: 40px;
+.texto-sobre-mi p{
+    padding: 30px;
 }
 
 .titulo-sobremi {
@@ -159,7 +148,7 @@ footer{
     font-size: 40px;
 }
 /*CONFIGURACIÓN MENU "SOBRE MI" MOBILE RESPONSIVE IPHONE 12PRO*/
-
+/*
 @media screen and (max-width:390px) {
     .main-contenedor{
         display: grid;
@@ -188,7 +177,7 @@ footer{
     .textoSobreMi{
         padding-left: 20px;
     }
-}
+}*/
 
 
 /*CONFIGURACIÓN MENU "DECORACIÓN"*/
