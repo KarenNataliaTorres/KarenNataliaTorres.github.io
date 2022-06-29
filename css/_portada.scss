@@ -1,0 +1,50 @@
+/*PAGINA INICIO CONFIGURACIÓN PORTADA */
+.portada {
+    background-image:url(https://cdn.pixabay.com/photo/2019/12/08/21/10/potter-4682257_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 40%;
+    text-align: center;
+    text-align-last: center;
+    height: 500px;
+    color: beige;
+    background-color: $fondoComun;
+    padding-top: 150px;
+    h1{
+        font-size: 80px;
+        border-top: 5px double white ;
+        border-bottom: 5px double white ;
+        transition: font-size 2s; /* transicion para agrandar texto portada*/
+        &:hover{
+            font-size: 90px;
+        }
+    }
+    p{
+        font-size: 40px;
+        transition: font-size 2s; /* transicion para agrandar texto portada*/
+        &:hover{ 
+            font-size: 45px;
+        }
+    }
+
+}
+
+/*PAGINA INICIO CONFIGURACIÓN PORTADA  MOBILE RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width:390px) {
+    .portada{
+        background-size: cover;
+        text-align: center;
+        h1{
+            font-size: 50px;  
+            &:hover{
+                font-size: 55px;
+            }
+        }
+        p{
+            font-size: 30px;
+            &:hover{
+                font-size: 32px;
+            }
+        }
+    }
+}

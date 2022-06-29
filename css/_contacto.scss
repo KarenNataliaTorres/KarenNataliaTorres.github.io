@@ -1,0 +1,26 @@
+/* PAGINA CONTACTO-CONFIGURACIÓN*/
+.contacto {
+    padding: 30px;
+    color: $colorTextoNegro;
+    text-align: center;
+    background-color: $fondoComun;
+}
+/* PAGINA CONTACTO-CONFIGURACIÓN RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width:390px) {
+    .contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 15px;
+        padding: 0px;
+        text-align: center;
+    }
+    .formulario{
+        width: 350px;
+    }
+    #comentarios{
+        width: 320px;
+        margin: 20px;
+        
+    }
+    
+}

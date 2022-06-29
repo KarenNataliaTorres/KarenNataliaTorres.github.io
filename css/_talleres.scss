@@ -1,0 +1,49 @@
+/*CONFIGURACIÓN MENU "TALLERES"*/
+.talleres{
+    background-image: url(https://previews.123rf.com/images/natthanim/natthanim1706/natthanim170600156/81171801-textura-de-pared-de-m%C3%A1rmol-de-fondo-blanco-para-el-trabajo-de-arte-de-dise%C3%B1o-textura-de-piedra-de-fo.jpg?fj=1);
+    text-align: center;
+    height: 600px; 
+    padding-top: 40px;
+    img{
+        height: 100%;
+    }
+    h1{
+        font-size: 60px;
+        border-top: 5px double black ;
+        border-bottom: 5px double black ;
+        margin-top: 50px;
+        padding: 10px;
+        &:hover{
+            transform: scale(1.20,1.20);
+            transition: 2s;
+        }
+    }
+    p{
+        &:hover{
+            transform: scale(1.16,1.16);
+            transition: 2s;
+        }
+    }
+}
+
+
+/*CONFIGURACIÓN MENU "TALLERES" MOBILE RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width:390px) {
+    .talleres{
+        h1{
+            font-size: 60px;
+            border-top: 5px double black ;
+            &:hover{
+                transform: scale(1.10,1.10);
+                transition: 2s;
+            }
+        }
+        p{
+            font-size: 16px;
+            padding: 10px;
+            &:hover{
+                transform: scale(1,1);
+            }
+        }
+    }
+}

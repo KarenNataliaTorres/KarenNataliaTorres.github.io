@@ -1,0 +1,30 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');/*font-family: italiana*/
+
+/*REM HTML */
+html{
+    font-size: 18px;
+    font-family: italiana;
+}
+
+/*CONFIGURACIONES COMUNES DEL BODY*/
+
+.body {
+    background-color:$pageBackground;
+    font-family: italiana;
+    color: white;
+}
+.fondoComun{/* fondo aplicado a algunos submenus*/
+    background-color: $fondoComun;
+    color: $colorTextoNegro; ;
+    a { /*ETIQUETA QUE MODIFICA HIPERVINCULOS*/
+        text-decoration: none;
+        color: $fondoComun;
+    }
+}
+
+/*imagen responsive*/
+img{
+    max-width: 100%;
+    height: auto;
+}

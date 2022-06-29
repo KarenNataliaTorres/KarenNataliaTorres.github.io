@@ -1,0 +1,51 @@
+/*CONFIGURACIÓN MENÚ TIENDA*/
+
+/*grilla catálogo productos*/
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    justify-content: center;
+    
+}
+
+/*estilo tarjeta catalogo productos*/
+.tarjeta{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border: solid 1px white;
+    text-align: center;
+    &:hover{
+        transform: scale(1.10,1.10);
+        transition: 2s;
+    }
+}
+
+.boton-comprar:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: solid 2px #DDE7A1;
+    padding: 10px;
+    background-color: $buttonComprar;
+    background-image: linear-gradient(to left,rgb(237, 222, 222),rgb(69, 67, 67));
+}
+
+    
+    
+
+/*CONFIGURACIÓN MENÚ TIENDA RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width:390px) {
+    .catalogo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .header-contenedor{
+        flex-direction: column;
+    }
+    
+}

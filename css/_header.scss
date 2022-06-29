@@ -1,0 +1,57 @@
+/* CONFIGURACIONES HEADER LOGO Y BARRA MENU PARA TODAS LAS PAGINAS*/
+
+.logo-emprendimiento{
+    text-decoration: none;
+    font-family: italiana;
+    font-size: 40px;    
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+.estilo-nav {
+    background-color:$pageBackground;
+    height:70px;
+    width:auto;
+}
+.header-menu-0{
+    justify-content: end;
+}
+
+.header-menu{
+    list-style-type: none;
+    border: 1px solid $buttonBackground ;
+    border-radius: 5px;
+    margin: 2px;
+    background-color:  $buttonBackground;
+    text-align: center;
+    justify-content: end;
+    font-size: 20px;
+    height: auto;
+    a{
+        color: #c7ab3ce7;
+    }
+}
+
+/*RESPONSIVE NAV BAR*/
+@media screen and (max-width:390px) {
+   .logo-emprendimiento{
+    font-size: 23px;
+   }
+}
+/* CONFIGURACIÓN RESPONSIVE DESKTOP PARA BARRA MENU Y PARA PAGINA "SOBRE MI"*/
+@media screen and (min-width:391px) and (max-width:1200px) {
+    .header-contenedor{
+        display: grid;
+        grid-template-columns:480px 700px;
+        grid-template-rows: 86px;
+        align-items: center;
+        align-content: center;
+    }  
+    .foto2 {
+        position: relative;
+        left: 750px;
+        top: 300px;
+    }
+    
+}
