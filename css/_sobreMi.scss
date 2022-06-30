@@ -6,24 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.foto1 img{
-    width: 300px;
-    height: auto;
-    position: absolute;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-}
-.foto1 img:hover{
-   transform: scale(1.25,1.25);
-   transition: 2s;
-   
-}
-.foto2 {
-    position: relative;
-    left: 900px;
-    top: 300px;
-}
+
 .textoSobreMi{
     padding-left: 40px;
 }
