@@ -155,29 +155,11 @@ footer {
   grid-template-columns: 1fr 1fr;
 }
 
-.foto1 img {
-  width: 300px;
-  height: auto;
-  position: absolute;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 50px;
-}
-.foto1 img:hover {
-  transform: scale(1.25, 1.25);
-  transition: 2s;
-}
-
-.foto2 {
-  position: relative;
-  left: 900px;
-  top: 300px;
-}
-
 .textoSobreMi {
   padding-left: 40px;
 }
-.textoSobreMi h1 {
+
+.titulo-sobremi {
   text-align: center;
   font-size: 40px;
 }
@@ -339,15 +321,21 @@ main h1 {
 }
 
 /*estilo tarjeta catalogo productos*/
-.tarjeta {
+.tarjeta, .tarjeta-1 {
   width: 300px;
   height: auto;
   padding: 20px;
   border: solid 1px white;
   text-align: center;
 }
-.tarjeta:hover {
+.tarjeta:hover, .tarjeta-1:hover {
   transform: scale(1.1, 1.1);
+  transition: 2s;
+}
+
+.tarjeta-1:hover {
+  transform: scale(1.1, 1.1);
+  background-color: #b08854;
   transition: 2s;
 }
 
