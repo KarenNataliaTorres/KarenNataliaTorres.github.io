@@ -1,0 +1,17 @@
+/*Karen! 
+
+Muy bien aplicado el sass, compila bien, gran trabajo. De a poco lo vas a ir ordenando por ejemplo con partials para mixins, botones, etc.
+
+Pero comprendiste la lógica, muy bien!*/
+
+$botones-tienda:(
+    ver: red,
+    comprar: green,
+    guardar: blue
+);
+@each $boton, $color in $botones-tienda {
+    .btn--#{$boton}{
+        background-color: $color;
+    }
+    
+}
