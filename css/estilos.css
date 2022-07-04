@@ -155,6 +155,11 @@ footer {
   grid-template-columns: 1fr 1fr;
 }
 
+.tamañoCarrusel {
+  width: 500px;
+  height: auto;
+}
+
 .textoSobreMi {
   padding-left: 40px;
 }
@@ -194,6 +199,11 @@ footer {
 
   .textoSobreMi {
     padding-left: 20px;
+  }
+
+  .tamañoCarrusel {
+    width: 300px;
+    height: auto;
   }
 }
 /*CONFIGURACIÓN MENU "DECORACIÓN"*/
@@ -321,32 +331,23 @@ main h1 {
 }
 
 /*estilo tarjeta catalogo productos*/
-.tarjeta, .tarjeta-1 {
+.tarjeta, .tarjeta-map, .tarjeta-1 {
   width: 300px;
   height: auto;
   padding: 20px;
   border: solid 1px white;
   text-align: center;
+  background-color: #dfee87;
 }
-.tarjeta:hover, .tarjeta-1:hover {
+.tarjeta:hover, .tarjeta-map:hover, .tarjeta-1:hover {
   transform: scale(1.1, 1.1);
   transition: 2s;
 }
 
 .tarjeta-1:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.08, 1.08);
   background-color: #b08854;
   transition: 2s;
-}
-
-.boton-comprar:hover {
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  border: solid 2px #DDE7A1;
-  padding: 10px;
-  background-color: rgb(69, 67, 67);
-  background-image: linear-gradient(to left, rgb(237, 222, 222), rgb(69, 67, 67));
 }
 
 /*CONFIGURACIÓN MENÚ TIENDA RESPONSIVE IPHONE 12PRO*/
@@ -386,4 +387,44 @@ main h1 {
     width: 320px;
     margin: 20px;
   }
+}
+/*CONFIGURACION GENERAL DE BOTONES TIENDA*/
+.botones-tienda {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: solid 2px #DDE7A1;
+  padding: 5px;
+  font-size: 14px;
+  margin: 5px;
+}
+.botones-tienda:hover {
+  background-color: rgb(69, 67, 67);
+  background-image: linear-gradient(to left, rgb(237, 222, 222), rgb(69, 67, 67));
+}
+
+/*UTILIZO MAPA Y UN EACH PARA DIFERENCIAR BOTONES TIENDA (VER MAS, COMPRAR Y GUARDAR)*/
+.btn--ver {
+  background-color: rgb(177, 250, 177);
+}
+
+.btn--comprar {
+  background-color: rgb(137, 227, 137);
+}
+
+.btn--guardar {
+  background-color: rgb(99, 154, 99);
+}
+
+/*UTILIZO MAP-GET PARA CAMBIAR ESTILOS DE ALGUNAS TARJETAS EXTENDIENDO UNA CLASE EXISTENTE*/
+.tarjeta-map {
+  background-color: rgba(135, 145, 81, 0.6235294118);
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+/*UTILIZO MIXIN PARA CAMBIARLE EL COLOR A LAS ULTIMAS 3 TARJETAS*/
+.tarjeta-mixin {
+  background-color: rgba(189, 203, 110, 0.8509803922);
 }/*# sourceMappingURL=estilos.css.map */

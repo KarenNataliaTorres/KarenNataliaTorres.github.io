@@ -1,0 +1,52 @@
+/*CONFIGURACION GENERAL DE BOTONES TIENDA*/
+.botones-tienda{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: solid 2px #DDE7A1;
+    padding: 5px;
+    &:hover{
+        background-color: $buttonComprar;
+        background-image: linear-gradient(to left,rgb(237, 222, 222),rgb(69, 67, 67));
+
+    }
+    font-size: 14px;
+    margin: 5px;
+}
+/*UTILIZO MAPA Y UN EACH PARA DIFERENCIAR BOTONES TIENDA (VER MAS, COMPRAR Y GUARDAR)*/
+$botones-tienda:(
+    ver:  rgb(177, 250, 177),
+    comprar: rgb(137, 227, 137),
+    guardar:  rgb(99, 154, 99)
+);
+@each $boton, $color in $botones-tienda {
+    .btn--#{$boton}{
+        background-color: $color;
+    }
+    
+}
+/*UTILIZO MAP-GET PARA CAMBIAR ESTILOS DE ALGUNAS TARJETAS EXTENDIENDO UNA CLASE EXISTENTE*/
+$estilos-tarjetas:(
+    colorcito: #8791519f,
+    alineacion-texto: center,
+    Borde:solid 1px black,
+    redondeado: 10px
+);
+.tarjeta-map {
+    @extend.tarjeta;
+    background-color:map-get($estilos-tarjetas,colorcito);
+    text-align:map-get($estilos-tarjetas,alineacion-texto);
+    border:map-get($estilos-tarjetas,Borde);
+    border-radius: map-get($estilos-tarjetas,redondeado);
+}
+
+
+/*UTILIZO MIXIN PARA CAMBIARLE EL COLOR A LAS ULTIMAS 3 TARJETAS*/
+
+@mixin color-tarjeta($color) {
+    background-color: $color;
+    
+}
+.tarjeta-mixin{
+    @include color-tarjeta(#bdcb6ed9 )
+}

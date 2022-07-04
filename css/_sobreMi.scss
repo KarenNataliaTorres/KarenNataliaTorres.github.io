@@ -6,6 +6,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.tamañoCarrusel{
+    width: 500px;
+    height: auto;
+    
+}
 
 .textoSobreMi{
     padding-left: 40px;
@@ -44,5 +49,10 @@
     }
     .textoSobreMi{
         padding-left: 20px;
+    }
+    .tamañoCarrusel{
+        width: 300px;
+        height: auto;
+        
     }
 }

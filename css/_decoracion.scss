@@ -6,14 +6,7 @@ main{
         padding:  30px 30px 0px 30px;
     }
 } 
-$textos 1 2 3
-@each $texto in $textos {
-    .texto#{$texto}{
-        grid-area: texto#{$texto};
-        border: double 5px white;
-        padding: 60px;
-    }
-}
+
 .texto1{
     grid-area: texto1;
     border: double 5px white;
