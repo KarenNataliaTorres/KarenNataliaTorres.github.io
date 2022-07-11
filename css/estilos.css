@@ -33,7 +33,7 @@ img {
 .logo-emprendimiento {
   text-decoration: none;
   font-family: italiana;
-  font-size: 40px;
+  font-size: 2.22rem;
   align-items: center;
   align-content: center;
   text-align: center;
@@ -42,7 +42,7 @@ img {
 
 .estilo-nav {
   background-color: #73A875;
-  height: 70px;
+  height: 3.89rem;
   width: auto;
 }
 
@@ -53,12 +53,12 @@ img {
 .header-menu {
   list-style-type: none;
   border: 1px solid #4E7E50;
-  border-radius: 5px;
-  margin: 2px;
+  border-radius: 0.28rem;
+  margin: 0.1rem;
   background-color: #4E7E50;
   text-align: center;
   justify-content: end;
-  font-size: 20px;
+  font-size: 1.11rem;
   height: auto;
 }
 .header-menu a {
@@ -73,13 +73,13 @@ img {
 /*RESPONSIVE NAV BAR*/
 @media screen and (max-width: 390px) {
   .logo-emprendimiento {
-    font-size: 23px;
+    font-size: 1.28rem;
   }
 }
 /*CONFIGURACIÓN FOOTER*/
 footer {
-  height: 50px;
-  padding-left: 30px;
+  height: 2.78rem;
+  padding-left: 1.67rem;
 }
 
 /*PAGINA INICIO CONFIGURACIÓN PORTADA */
@@ -88,7 +88,7 @@ footer {
   -moz-text-align-last: center;
        text-align-last: center;
   color: beige;
-  height: 580px;
+  height: 32.22rem;
 }
 .carousel-item img {
   -o-object-fit: cover;
@@ -98,21 +98,21 @@ footer {
 }
 .carousel-item h1 {
   background-color: rgba(70, 62, 62, 0.4);
-  font-size: 80px;
-  border-top: 5px double white;
-  border-bottom: 5px double white;
-  margin-top: 0px;
+  font-size: 4.44rem;
+  border-top: 0.28rem double white;
+  border-bottom: 0.28rem double white;
+  margin-top: 0rem;
   transition: font-size 2s; /* transicion para agrandar texto portada*/
 }
 .carousel-item h1:hover {
-  font-size: 90px;
+  font-size: 5rem;
 }
 .carousel-item p {
-  font-size: 40px;
+  font-size: 2.22rem;
   transition: font-size 2s; /* transicion para agrandar texto portada*/
 }
 .carousel-item p:hover {
-  font-size: 45px;
+  font-size: 2.5rem;
 }
 
 /*PAGINA INICIO CONFIGURACIÓN PORTADA  MOBILE RESPONSIVE IPHONE 12PRO*/
@@ -122,7 +122,7 @@ footer {
     -moz-text-align-last: center;
          text-align-last: center;
     color: beige;
-    height: 580px;
+    height: 32.22rem;
     background-size: cover;
     text-align: center;
   }
@@ -133,40 +133,40 @@ footer {
     height: 100vh;
   }
   .carousel-item h1 {
-    font-size: 50px;
+    font-size: 2.78rem;
   }
   .carousel-item h1:hover {
-    font-size: 55px;
+    font-size: 3rem;
   }
   .carousel-item p {
-    font-size: 30px;
+    font-size: 1.67rem;
   }
   .carousel-item p:hover {
-    font-size: 32px;
+    font-size: 1.78rem;
   }
 }
 /*CONFIGURACIÓN MENU "SOBRE MI"*/
 .main-contenedor {
   background-image: url(https://img.freepik.com/foto-gratis/taza-te-hierbas-hermosas-flores-esquina-fondo-madera_23-2148092072.jpg?t=st=1657483292~exp=1657483892~hmac=b92de6da056f28a2cd7b6c845bd579bb8d0fa2249e34d1b9d0c3568a0e4470bb&w=740);
   background-size: cover;
-  padding: 30px;
+  padding: 1.68rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .textoSobreMi {
-  padding-left: 40px;
+  padding-left: 2.22rem;
   background-color: rgba(130, 70, 70, 0.548);
-  border-radius: 20px;
+  border-radius: 1.11rem;
 }
 
 .titulo-sobremi {
   text-align: center;
-  font-size: 40px;
+  font-size: 2.22rem;
 }
 
 .tamañoCarrusel {
-  margin: 30px;
+  margin: 1.67rem;
 }
 .tamañoCarrusel img {
   width: auto;
@@ -178,33 +178,33 @@ footer {
   .main-contenedor {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 18px;
+    font-size: 1rem;
   }
   .textoSobreMi {
-    padding-left: 20px;
+    padding-left: 1.11rem;
   }
   .tamañoCarrusel {
-    padding-top: 40px;
+    padding-top: 2.22rem;
   }
 }
 /*CONFIGURACIÓN MENU "DECORACIÓN"*/
 .Deco {
   background-image: url(https://img.freepik.com/vector-gratis/pared-piso-madera-superficie-envejecida-realista_107791-682.jpg?t=st=1657488116~exp=1657488716~hmac=2b03aeebbf76f42c785a9bf8f5074d186e5486a5f8ef3d70b38c4af135af9f84&w=996);
-  padding-top: 50px;
+  padding-top: 2.78rem;
 }
 .Deco h1 {
   text-align: center;
   align-items: center;
-  border-top: 5px double black;
-  border-bottom: 5px double black;
-  padding: 10px;
+  border-top: 0.28rem double black;
+  border-bottom: 0.28rem double black;
+  padding: 0.55rem;
   background-color: rgba(223, 177, 104, 0.279);
 }
 
 .texto1, .texto3, .texto2 {
   grid-area: texto1;
-  border: double 5px white;
-  padding: 60px;
+  border: double 0.28rem white;
+  padding: 3.33rem;
   background-color: rgba(223, 177, 104, 0.279);
 }
 
@@ -218,9 +218,9 @@ footer {
 
 .deco-img1, .deco-img3, .deco-img2 {
   grid-area: deco-img1;
-  width: 310px;
+  width: 17.22rem;
   height: auto;
-  border-radius: 20px;
+  border-radius: 1.11rem;
 }
 
 .deco-img2 {
@@ -238,7 +238,7 @@ footer {
   grid-row: repeat(3, 1/2fr);
   justify-items: center;
   align-items: center;
-  padding: 0px 50px 50px 50px;
+  padding: 0rem 2.78rem 2.78rem 2.78rem;
 }
 #grilla-deco p:hover {
   background-color: #b08854;
@@ -252,7 +252,7 @@ footer {
     grid-template-areas: "deco-img1" "texto1" "deco-img2" "texto2" "deco-img3" "texto3";
     grid-template-columns: 1fr;
     align-items: center;
-    gap: 10px;
+    gap: 0.55rem;
     justify-content: center;
   }
 }
@@ -262,15 +262,15 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  height: 600px;
-  padding-top: 40px;
+  height: 33.33rem;
+  padding-top: 2.22rem;
 }
 .talleres h1 {
-  font-size: 60px;
-  border-top: 5px double black;
-  border-bottom: 5px double black;
-  margin-top: 50px;
-  padding: 10px;
+  font-size: 3.33rem;
+  border-top: 0.28rem double black;
+  border-bottom: 0.28rem double black;
+  margin-top: 2.78rem;
+  padding: 0.55rem;
   background-color: rgba(223, 177, 104, 0.781);
 }
 .talleres h1:hover {
@@ -278,7 +278,7 @@ footer {
   transition: 2s;
 }
 .talleres p {
-  padding: 10px;
+  padding: 0.55rem;
   align-items: center;
   background-color: rgba(223, 177, 104, 0.781);
 }
@@ -290,19 +290,19 @@ footer {
 /*CONFIGURACIÓN MENU "TALLERES" MOBILE RESPONSIVE IPHONE 12PRO*/
 @media screen and (max-width: 390px) {
   .talleres h1 {
-    font-size: 60px;
-    border-top: 5px double black;
+    font-size: 3.33rem;
+    border-top: 0.28rem double black;
   }
   .talleres h1:hover {
     transform: scale(1.1, 1.1);
     transition: 2s;
   }
   .talleres p {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 20px;
+    margin-left: 1.11rem;
+    margin-right: 1.11rem;
+    font-size: 0.88rem;
+    padding: 0.55rem;
+    border-radius: 1.11rem;
   }
   .talleres p:hover {
     transform: scale(1.08, 1.08);
@@ -315,19 +315,19 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   align-items: center;
-  gap: 20px;
-  padding: 50px;
+  gap: 1.11rem;
+  padding: 2.78rem;
   justify-items: center;
   background-image: url(https://img.freepik.com/vector-gratis/pared-piso-madera-superficie-envejecida-realista_107791-682.jpg?t=st=1657488116~exp=1657488716~hmac=2b03aeebbf76f42c785a9bf8f5074d186e5486a5f8ef3d70b38c4af135af9f84&w=996);
 }
 
 /*estilo tarjeta catalogo productos*/
 .tarjeta, .tarjeta-map, .tarjeta-1 {
-  width: 300px;
+  width: 16.66rem;
   height: auto;
-  padding: 20px;
+  padding: 1.11rem;
   border: solid 1px white;
-  border-radius: 20px;
+  border-radius: 1.11rem;
   text-align: center;
   background-color: rgba(135, 145, 81, 0.6235294118);
 }
@@ -351,8 +351,8 @@ footer {
 }
 /* PAGINA CONTACTO-CONFIGURACIÓN*/
 .contacto {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 1.67rem;
+  padding-bottom: 1.67rem;
   color: rgb(35, 35, 35);
   text-align: center;
   background-image: url(https://img.freepik.com/foto-gratis/textura-fondo_1404-117.jpg?t=st=1657489217~exp=1657489817~hmac=a48de897ce52a190df9709f6a14c32686410e3eee154dc11e251ba5bbda42683&w=740);
@@ -368,25 +368,25 @@ footer {
   .contacto {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 15px;
+    font-size: 0.83rem;
     text-align: center;
   }
   .formulario {
-    width: 350px;
+    width: 19.45rem;
   }
   #comentarios {
-    width: 320px;
-    margin: 20px;
+    width: 17.78rem;
+    margin: 1.11rem;
   }
 }
 /*CONFIGURACION GENERAL DE BOTONES TIENDA*/
 .botones-tienda {
   background-color: white;
   color: black;
-  border-radius: 5px;
+  border-radius: 0.28rem;
   border: solid 2px #DDE7A1;
-  padding: 5px;
-  font-size: 14px;
+  padding: 0.28rem;
+  font-size: 0.78rem;
   margin: 5px;
 }
 .botones-tienda:hover {
@@ -412,7 +412,7 @@ footer {
   background-color: rgba(135, 145, 81, 0.6235294118);
   text-align: center;
   border: solid 1px black;
-  border-radius: 10px;
+  border-radius: 0.55rem;
 }
 
 /*UTILIZO MIXIN PARA PONERLE COLOR A LAS ULTIMAS 3 TARJETAS(EN REALIDAD CONSERVO COLOR, UTILIZO MIXIN PARA PRACTICAR)*/
