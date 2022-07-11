@@ -32,6 +32,10 @@
         color: #c7ab3ce7;
     }
 }
+.nav-item{
+    position: relative;
+    z-index: 1000;
+}
 
 /*RESPONSIVE NAV BAR*/
 @media screen and (max-width:390px) {
@@ -47,6 +51,7 @@
         grid-template-rows: 86px;
         align-items: center;
         align-content: center;
+        
     }  
     .foto2 {
         position: relative;

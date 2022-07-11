@@ -1,24 +1,30 @@
 /*CONFIGURACIÓN MENU "SOBRE MI"*/
 
 .main-contenedor{
-    
+    background-image: url(https://img.freepik.com/foto-gratis/taza-te-hierbas-hermosas-flores-esquina-fondo-madera_23-2148092072.jpg?t=st=1657483292~exp=1657483892~hmac=b92de6da056f28a2cd7b6c845bd579bb8d0fa2249e34d1b9d0c3568a0e4470bb&w=740);    
+    background-size: cover;
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.tamañoCarrusel{
-    width: 500px;
-    height: auto;
-    
-}
 
 .textoSobreMi{
     padding-left: 40px;
+    background-color: rgba(130, 70, 70, 0.548);
+    border-radius: 20px;
 }
 
 .titulo-sobremi {
     text-align: center;
     font-size: 40px;
+    
+}
+.tamañoCarrusel{
+    margin: 30px;
+    img{
+        width: auto;
+        height: auto;
+    }
 }
 /*CONFIGURACIÓN MENU "SOBRE MI" MOBILE RESPONSIVE IPHONE 12PRO*/
 
@@ -27,32 +33,12 @@
         display: grid;
         grid-template-columns: 1fr;
         font-size: 15px;
-        width: 310px;
-    }
-    .foto1 img{
-        width: 300px;
-        height: auto;
-        position: relative;
-        left: 0%;
-        justify-content: center;
-        padding-left:0px ;
-
-    }
-    .foto2{
-        width: 300px;
-        height: auto;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        justify-content: center;
-        padding-left:0px ;
     }
     .textoSobreMi{
         padding-left: 20px;
     }
     .tamañoCarrusel{
-        width: 300px;
-        height: auto;
-        
+        padding-top: 40px;
     }
+
 }
