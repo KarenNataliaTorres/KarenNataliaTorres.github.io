@@ -3,7 +3,7 @@
 .logo-emprendimiento{
     text-decoration: none;
     font-family: italiana;
-    font-size: 40px;    
+    font-size: 2.22rem;    
     align-items: center;
     align-content: center;
     text-align: center;
@@ -11,7 +11,7 @@
 }
 .estilo-nav {
     background-color:$pageBackground;
-    height:70px;
+    height:3.89rem;
     width:auto;
 }
 .header-menu-0{
@@ -21,12 +21,12 @@
 .header-menu{
     list-style-type: none;
     border: 1px solid $buttonBackground ;
-    border-radius: 5px;
-    margin: 2px;
+    border-radius: 0.28rem;
+    margin: 0.1rem;
     background-color:  $buttonBackground;
     text-align: center;
     justify-content: end;
-    font-size: 20px;
+    font-size: 1.11rem;
     height: auto;
     a{
         color: #c7ab3ce7;
@@ -40,6 +40,6 @@
 /*RESPONSIVE NAV BAR*/
 @media screen and (max-width:390px) {
    .logo-emprendimiento{
-    font-size: 23px;
+    font-size: 1.28rem;
    }
 }

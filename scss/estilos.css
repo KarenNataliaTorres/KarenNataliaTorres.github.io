@@ -1,0 +1,421 @@
+@charset "UTF-8";
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap"); /*font-family: italiana*/
+/*REM HTML */
+html {
+  font-size: 18px;
+  font-family: italiana;
+}
+
+/*CONFIGURACIONES COMUNES DEL BODY*/
+.body {
+  background-color: #73A875;
+  font-family: italiana;
+  color: white;
+}
+
+.fondoComun { /* fondo aplicado a algunos submenus*/
+  background-color: #DDE7A1;
+  color: rgb(35, 35, 35);
+}
+.fondoComun a { /*ETIQUETA QUE MODIFICA HIPERVINCULOS*/
+  text-decoration: none;
+  color: #DDE7A1;
+}
+
+/*imagen responsive*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONFIGURACIONES HEADER LOGO Y BARRA MENU PARA TODAS LAS PAGINAS*/
+.logo-emprendimiento {
+  text-decoration: none;
+  font-family: italiana;
+  font-size: 2.22rem;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.estilo-nav {
+  background-color: #73A875;
+  height: 3.89rem;
+  width: auto;
+}
+
+.header-menu-0 {
+  justify-content: end;
+}
+
+.header-menu {
+  list-style-type: none;
+  border: 1px solid #4E7E50;
+  border-radius: 0.28rem;
+  margin: 0.1rem;
+  background-color: #4E7E50;
+  text-align: center;
+  justify-content: end;
+  font-size: 1.11rem;
+  height: auto;
+}
+.header-menu a {
+  color: rgba(199, 171, 60, 0.9058823529);
+}
+
+.nav-item {
+  position: relative;
+  z-index: 1000;
+}
+
+/*RESPONSIVE NAV BAR*/
+@media screen and (max-width: 390px) {
+  .logo-emprendimiento {
+    font-size: 1.28rem;
+  }
+}
+/*CONFIGURACIÓN FOOTER*/
+footer {
+  height: 2.78rem;
+  padding-left: 1.67rem;
+}
+
+/*PAGINA INICIO CONFIGURACIÓN PORTADA */
+.carousel-item {
+  text-align: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  color: beige;
+  height: 32.22rem;
+}
+.carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+.carousel-item h1 {
+  background-color: rgba(70, 62, 62, 0.4);
+  font-size: 4.44rem;
+  border-top: 0.28rem double white;
+  border-bottom: 0.28rem double white;
+  margin-top: 0rem;
+  transition: font-size 2s; /* transicion para agrandar texto portada*/
+}
+.carousel-item h1:hover {
+  font-size: 5rem;
+}
+.carousel-item p {
+  font-size: 2.22rem;
+  transition: font-size 2s; /* transicion para agrandar texto portada*/
+}
+.carousel-item p:hover {
+  font-size: 2.5rem;
+}
+
+/*PAGINA INICIO CONFIGURACIÓN PORTADA  MOBILE RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width: 390px) {
+  .carousel-item {
+    text-align: center;
+    -moz-text-align-last: center;
+         text-align-last: center;
+    color: beige;
+    height: 32.22rem;
+    background-size: cover;
+    text-align: center;
+  }
+  .carousel-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .carousel-item h1 {
+    font-size: 2.78rem;
+  }
+  .carousel-item h1:hover {
+    font-size: 3rem;
+  }
+  .carousel-item p {
+    font-size: 1.67rem;
+  }
+  .carousel-item p:hover {
+    font-size: 1.78rem;
+  }
+}
+/*CONFIGURACIÓN MENU "SOBRE MI"*/
+.main-contenedor {
+  background-image: url(https://img.freepik.com/foto-gratis/taza-te-hierbas-hermosas-flores-esquina-fondo-madera_23-2148092072.jpg?t=st=1657483292~exp=1657483892~hmac=b92de6da056f28a2cd7b6c845bd579bb8d0fa2249e34d1b9d0c3568a0e4470bb&w=740);
+  background-size: cover;
+  padding: 1.68rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.textoSobreMi {
+  padding-left: 2.22rem;
+  background-color: rgba(130, 70, 70, 0.548);
+  border-radius: 1.11rem;
+}
+
+.titulo-sobremi {
+  text-align: center;
+  font-size: 2.22rem;
+}
+
+.tamañoCarrusel {
+  margin: 1.67rem;
+}
+.tamañoCarrusel img {
+  width: auto;
+  height: auto;
+}
+
+/*CONFIGURACIÓN MENU "SOBRE MI" MOBILE RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width: 390px) {
+  .main-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+  }
+  .textoSobreMi {
+    padding-left: 1.11rem;
+  }
+  .tamañoCarrusel {
+    padding-top: 2.22rem;
+  }
+}
+/*CONFIGURACIÓN MENU "DECORACIÓN"*/
+.Deco {
+  background-image: url(https://img.freepik.com/vector-gratis/pared-piso-madera-superficie-envejecida-realista_107791-682.jpg?t=st=1657488116~exp=1657488716~hmac=2b03aeebbf76f42c785a9bf8f5074d186e5486a5f8ef3d70b38c4af135af9f84&w=996);
+  padding-top: 2.78rem;
+}
+.Deco h1 {
+  text-align: center;
+  align-items: center;
+  border-top: 0.28rem double black;
+  border-bottom: 0.28rem double black;
+  padding: 0.55rem;
+  background-color: rgba(223, 177, 104, 0.279);
+}
+
+.texto1, .texto3, .texto2 {
+  grid-area: texto1;
+  border: double 0.28rem white;
+  padding: 3.33rem;
+  background-color: rgba(223, 177, 104, 0.279);
+}
+
+.texto2 {
+  grid-area: texto2;
+}
+
+.texto3 {
+  grid-area: texto3;
+}
+
+.deco-img1, .deco-img3, .deco-img2 {
+  grid-area: deco-img1;
+  width: 17.22rem;
+  height: auto;
+  border-radius: 1.11rem;
+}
+
+.deco-img2 {
+  grid-area: deco-img2;
+}
+
+.deco-img3 {
+  grid-area: deco-img3;
+}
+
+#grilla-deco {
+  display: grid;
+  grid-template-areas: "texto1 texto1 deco-img1" "deco-img2 texto2 texto2" "texto3 texto3 deco-img3";
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: repeat(3, 1/2fr);
+  justify-items: center;
+  align-items: center;
+  padding: 0rem 2.78rem 2.78rem 2.78rem;
+}
+#grilla-deco p:hover {
+  background-color: #b08854;
+  transition: 1s;
+}
+
+/*CONFIGURACIÓN MENU "DECORACIÓN" MOBILE RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width: 390px) {
+  #grilla-deco {
+    display: grid;
+    grid-template-areas: "deco-img1" "texto1" "deco-img2" "texto2" "deco-img3" "texto3";
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 0.55rem;
+    justify-content: center;
+  }
+}
+/*CONFIGURACIÓN MENU "TALLERES"*/
+.talleres {
+  background-image: url(https://img.freepik.com/foto-gratis/taza-te-hierbas-hermosas-flores-esquina-fondo-madera_23-2148092072.jpg?t=st=1657483292~exp=1657483892~hmac=b92de6da056f28a2cd7b6c845bd579bb8d0fa2249e34d1b9d0c3568a0e4470bb&w=740);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 33.33rem;
+  padding-top: 2.22rem;
+}
+.talleres h1 {
+  font-size: 3.33rem;
+  border-top: 0.28rem double black;
+  border-bottom: 0.28rem double black;
+  margin-top: 2.78rem;
+  padding: 0.55rem;
+  background-color: rgba(223, 177, 104, 0.781);
+}
+.talleres h1:hover {
+  transform: scale(1.2, 1.2);
+  transition: 2s;
+}
+.talleres p {
+  padding: 0.55rem;
+  align-items: center;
+  background-color: rgba(223, 177, 104, 0.781);
+}
+.talleres p:hover {
+  transform: scale(1.16, 1.16);
+  transition: 2s;
+}
+
+/*CONFIGURACIÓN MENU "TALLERES" MOBILE RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width: 390px) {
+  .talleres h1 {
+    font-size: 3.33rem;
+    border-top: 0.28rem double black;
+  }
+  .talleres h1:hover {
+    transform: scale(1.1, 1.1);
+    transition: 2s;
+  }
+  .talleres p {
+    margin-left: 1.11rem;
+    margin-right: 1.11rem;
+    font-size: 0.88rem;
+    padding: 0.55rem;
+    border-radius: 1.11rem;
+  }
+  .talleres p:hover {
+    transform: scale(1.08, 1.08);
+  }
+}
+/*CONFIGURACIÓN MENÚ TIENDA*/
+/*grilla catálogo productos*/
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 1.11rem;
+  padding: 2.78rem;
+  justify-items: center;
+  background-image: url(https://img.freepik.com/vector-gratis/pared-piso-madera-superficie-envejecida-realista_107791-682.jpg?t=st=1657488116~exp=1657488716~hmac=2b03aeebbf76f42c785a9bf8f5074d186e5486a5f8ef3d70b38c4af135af9f84&w=996);
+}
+
+/*estilo tarjeta catalogo productos*/
+.tarjeta, .tarjeta-map, .tarjeta-1 {
+  width: 16.66rem;
+  height: auto;
+  padding: 1.11rem;
+  border: solid 1px white;
+  border-radius: 1.11rem;
+  text-align: center;
+  background-color: rgba(135, 145, 81, 0.6235294118);
+}
+.tarjeta:hover, .tarjeta-map:hover, .tarjeta-1:hover {
+  transform: scale(1.1, 1.1);
+  transition: 2s;
+}
+
+.tarjeta-1:hover {
+  transform: scale(1.08, 1.08);
+  background-color: #b08854;
+  transition: 2s;
+}
+
+/*CONFIGURACIÓN MENÚ TIENDA RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width: 390px) {
+  .catalogo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/* PAGINA CONTACTO-CONFIGURACIÓN*/
+.contacto {
+  padding-top: 1.67rem;
+  padding-bottom: 1.67rem;
+  color: rgb(35, 35, 35);
+  text-align: center;
+  background-image: url(https://img.freepik.com/foto-gratis/textura-fondo_1404-117.jpg?t=st=1657489217~exp=1657489817~hmac=a48de897ce52a190df9709f6a14c32686410e3eee154dc11e251ba5bbda42683&w=740);
+  background-size: cover;
+}
+
+.contacto-fondo-texto {
+  background-color: rgba(211, 196, 196, 0.282);
+}
+
+/* PAGINA CONTACTO-CONFIGURACIÓN RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width: 390px) {
+  .contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.83rem;
+    text-align: center;
+  }
+  .formulario {
+    width: 19.45rem;
+  }
+  #comentarios {
+    width: 17.78rem;
+    margin: 1.11rem;
+  }
+}
+/*CONFIGURACION GENERAL DE BOTONES TIENDA*/
+.botones-tienda {
+  background-color: white;
+  color: black;
+  border-radius: 0.28rem;
+  border: solid 2px #DDE7A1;
+  padding: 0.28rem;
+  font-size: 0.78rem;
+  margin: 5px;
+}
+.botones-tienda:hover {
+  background-color: rgb(69, 67, 67);
+  background-image: linear-gradient(to left, rgb(237, 222, 222), rgb(69, 67, 67));
+}
+
+/*UTILIZO MAPA Y UN EACH PARA DIFERENCIAR BOTONES TIENDA (VER MAS, COMPRAR Y GUARDAR)*/
+.btn--ver {
+  background-color: rgb(177, 250, 177);
+}
+
+.btn--comprar {
+  background-color: rgb(137, 227, 137);
+}
+
+.btn--guardar {
+  background-color: rgb(99, 154, 99);
+}
+
+/*UTILIZO MAP-GET y EXTEND PARA CAMBIAR ESTILOS DE ALGUNAS TARJETAS USANDO UNA CLASE EXISTENTE*/
+.tarjeta-map {
+  background-color: rgba(135, 145, 81, 0.6235294118);
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 0.55rem;
+}
+
+/*UTILIZO MIXIN PARA PONERLE COLOR A LAS ULTIMAS 3 TARJETAS(EN REALIDAD CONSERVO COLOR, UTILIZO MIXIN PARA PRACTICAR)*/
+.tarjeta-mixin {
+  background-color: rgba(135, 145, 81, 0.6235294118);
+}/*# sourceMappingURL=estilos.css.map */

@@ -4,14 +4,14 @@
     background-repeat: no-repeat;
     background-size:cover;
     text-align: center;
-    height: 600px; 
-    padding-top: 40px;
+    height: 33.33rem; 
+    padding-top: 2.22rem;
     h1{
-        font-size: 60px;
-        border-top: 5px double black ;
-        border-bottom: 5px double black ;
-        margin-top: 50px;
-        padding: 10px;
+        font-size: 3.33rem;
+        border-top: 0.28rem double black ;
+        border-bottom: 0.28rem double black ;
+        margin-top: 2.78rem;
+        padding: 0.55rem;
         background-color: rgba(223, 177, 104, 0.781);
         &:hover{
             transform: scale(1.20,1.20);
@@ -19,7 +19,7 @@
         }
     }
     p{
-        padding: 10px;        
+        padding: 0.55rem;        
         align-items: center;
         background-color: rgba(223, 177, 104, 0.781);
         &:hover{
@@ -34,19 +34,19 @@
 @media screen and (max-width:390px) {
     .talleres{
         h1{
-            font-size: 60px;
-            border-top: 5px double black ;
+            font-size: 3.33rem;
+            border-top: 0.28rem double black ;
             &:hover{
                 transform: scale(1.10,1.10);
                 transition: 2s;
             }
         }
         p{
-            margin-left: 20px;
-            margin-right: 20px;
-            font-size: 16px;
-            padding: 10px;
-            border-radius: 20px;
+            margin-left: 1.11rem;
+            margin-right: 1.11rem;
+            font-size: 0.88rem;
+            padding: 0.55rem;
+            border-radius: 1.11rem;
             &:hover{
                 transform: scale(1.08,1.08);
             }

@@ -1,8 +1,8 @@
 /* PAGINA CONTACTO-CONFIGURACIÓN*/
 
 .contacto {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 1.67rem;
+    padding-bottom: 1.67rem;
     color:$colorTextoNegro;
     text-align:center;
     background-image: url(https://img.freepik.com/foto-gratis/textura-fondo_1404-117.jpg?t=st=1657489217~exp=1657489817~hmac=a48de897ce52a190df9709f6a14c32686410e3eee154dc11e251ba5bbda42683&w=740);
@@ -16,14 +16,14 @@
     .contacto{
         display: grid;
         grid-template-columns: 1fr;
-        font-size: 15px;
+        font-size: 0.83rem;
         text-align: center;
     }
     .formulario{
-        width: 350px;
+        width: 19.45rem;
     }
     #comentarios{
-        width: 320px;
-        margin: 20px;
+        width: 17.78rem;
+        margin: 1.11rem;
     }
 }

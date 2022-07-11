@@ -1,0 +1,13 @@
+@import"base/variables";
+@import"base/body";
+@import"layout/header";
+@import"layout/footer";
+//scss de las diferentes páginas del sitio
+@import"pages/portada";
+@import"pages/sobreMi";
+@import"pages/decoracion";
+@import"pages/talleres";
+@import"pages/tienda";
+@import"pages/contacto";
+//utilizo map, mixin y extend para algunas tarjetas del catalogo
+@import"base/mapaMixinExtend";

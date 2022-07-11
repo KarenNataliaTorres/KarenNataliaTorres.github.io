@@ -2,14 +2,14 @@
 .botones-tienda{
     background-color: white;
     color: black;
-    border-radius: 5px;
+    border-radius: 0.28rem;
     border: solid 2px #DDE7A1;
-    padding: 5px;
+    padding: 0.28rem;
     &:hover{
         background-color: $buttonComprar;
         background-image: linear-gradient(to left,rgb(237, 222, 222),rgb(69, 67, 67));
     }
-    font-size: 14px;
+    font-size: 0.78rem;
     margin: 5px;
 }
 /*UTILIZO MAPA Y UN EACH PARA DIFERENCIAR BOTONES TIENDA (VER MAS, COMPRAR Y GUARDAR)*/
@@ -28,7 +28,7 @@ $estilos-tarjetas:(
     colorcito: $colorFondoTarjetas,
     alineacion-texto: center,
     Borde:solid 1px black,
-    redondeado: 10px
+    redondeado: 0.55rem
 );
 .tarjeta-map {
     @extend.tarjeta;

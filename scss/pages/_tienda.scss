@@ -6,8 +6,8 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     align-items: center;
-    gap: 20px;
-    padding: 50px;
+    gap: 1.11rem;
+    padding: 2.78rem;
     justify-items: center;
     background-image: url(https://img.freepik.com/vector-gratis/pared-piso-madera-superficie-envejecida-realista_107791-682.jpg?t=st=1657488116~exp=1657488716~hmac=2b03aeebbf76f42c785a9bf8f5074d186e5486a5f8ef3d70b38c4af135af9f84&w=996);
 }
@@ -15,11 +15,11 @@
 /*estilo tarjeta catalogo productos*/
 
 .tarjeta{
-    width: 300px;
+    width: 16.66rem;
     height: auto;
-    padding: 20px;
+    padding: 1.11rem;
     border: solid 1px white;
-    border-radius: 20px;
+    border-radius: 1.11rem;
     text-align: center;
     background-color: #8791519f;
     &:hover{
