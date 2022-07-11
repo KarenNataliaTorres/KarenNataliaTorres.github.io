@@ -8,7 +8,6 @@
     &:hover{
         background-color: $buttonComprar;
         background-image: linear-gradient(to left,rgb(237, 222, 222),rgb(69, 67, 67));
-
     }
     font-size: 14px;
     margin: 5px;
@@ -23,11 +22,10 @@ $botones-tienda:(
     .btn--#{$boton}{
         background-color: $color;
     }
-    
 }
-/*UTILIZO MAP-GET PARA CAMBIAR ESTILOS DE ALGUNAS TARJETAS EXTENDIENDO UNA CLASE EXISTENTE*/
+/*UTILIZO MAP-GET y EXTEND PARA CAMBIAR ESTILOS DE ALGUNAS TARJETAS USANDO UNA CLASE EXISTENTE*/
 $estilos-tarjetas:(
-    colorcito: #8791519f,
+    colorcito: $colorFondoTarjetas,
     alineacion-texto: center,
     Borde:solid 1px black,
     redondeado: 10px
@@ -41,12 +39,11 @@ $estilos-tarjetas:(
 }
 
 
-/*UTILIZO MIXIN PARA CAMBIARLE EL COLOR A LAS ULTIMAS 3 TARJETAS*/
+/*UTILIZO MIXIN PARA PONERLE COLOR A LAS ULTIMAS 3 TARJETAS(EN REALIDAD CONSERVO COLOR, UTILIZO MIXIN PARA PRACTICAR)*/
 
 @mixin color-tarjeta($color) {
     background-color: $color;
-    
 }
 .tarjeta-mixin{
-    @include color-tarjeta(#bdcb6ed9 )
+    @include color-tarjeta($colorFondoTarjetas)
 }

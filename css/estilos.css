@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* GOOGLE FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
-/*font-family: italiana*/
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap"); /*font-family: italiana*/
 /*REM HTML */
 html {
   font-size: 18px;
@@ -15,13 +14,11 @@ html {
   color: white;
 }
 
-.fondoComun {
-  /* fondo aplicado a algunos submenus*/
+.fondoComun { /* fondo aplicado a algunos submenus*/
   background-color: #DDE7A1;
   color: rgb(35, 35, 35);
 }
-.fondoComun a {
-  /*ETIQUETA QUE MODIFICA HIPERVINCULOS*/
+.fondoComun a { /*ETIQUETA QUE MODIFICA HIPERVINCULOS*/
   text-decoration: none;
   color: #DDE7A1;
 }
@@ -79,22 +76,6 @@ img {
     font-size: 23px;
   }
 }
-/* CONFIGURACIÓN RESPONSIVE DESKTOP PARA BARRA MENU Y PARA PAGINA "SOBRE MI"*/
-@media screen and (min-width: 391px) and (max-width: 1200px) {
-  .header-contenedor {
-    display: grid;
-    grid-template-columns: 480px 700px;
-    grid-template-rows: 86px;
-    align-items: center;
-    align-content: center;
-  }
-
-  .foto2 {
-    position: relative;
-    left: 750px;
-    top: 300px;
-  }
-}
 /*CONFIGURACIÓN FOOTER*/
 footer {
   height: 50px;
@@ -121,16 +102,14 @@ footer {
   border-top: 5px double white;
   border-bottom: 5px double white;
   margin-top: 0px;
-  transition: font-size 2s;
-  /* transicion para agrandar texto portada*/
+  transition: font-size 2s; /* transicion para agrandar texto portada*/
 }
 .carousel-item h1:hover {
   font-size: 90px;
 }
 .carousel-item p {
   font-size: 40px;
-  transition: font-size 2s;
-  /* transicion para agrandar texto portada*/
+  transition: font-size 2s; /* transicion para agrandar texto portada*/
 }
 .carousel-item p:hover {
   font-size: 45px;
@@ -138,24 +117,6 @@ footer {
 
 /*PAGINA INICIO CONFIGURACIÓN PORTADA  MOBILE RESPONSIVE IPHONE 12PRO*/
 @media screen and (max-width: 390px) {
-  /*
-  .portada{
-      background-size: cover;
-      text-align: center;
-      h1{
-          font-size: 50px;  
-          &:hover{
-              font-size: 55px;
-          }
-      }
-      p{
-          font-size: 30px;
-          &:hover{
-              font-size: 32px;
-          }
-      }
-  }
-  */
   .carousel-item {
     text-align: center;
     -moz-text-align-last: center;
@@ -217,13 +178,11 @@ footer {
   .main-contenedor {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 15px;
+    font-size: 18px;
   }
-
   .textoSobreMi {
     padding-left: 20px;
   }
-
   .tamañoCarrusel {
     padding-top: 40px;
   }
@@ -389,10 +348,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   }
-
-  .header-contenedor {
-    flex-direction: column;
-  }
 }
 /* PAGINA CONTACTO-CONFIGURACIÓN*/
 .contacto {
@@ -416,11 +371,9 @@ footer {
     font-size: 15px;
     text-align: center;
   }
-
   .formulario {
     width: 350px;
   }
-
   #comentarios {
     width: 320px;
     margin: 20px;
@@ -454,7 +407,7 @@ footer {
   background-color: rgb(99, 154, 99);
 }
 
-/*UTILIZO MAP-GET PARA CAMBIAR ESTILOS DE ALGUNAS TARJETAS EXTENDIENDO UNA CLASE EXISTENTE*/
+/*UTILIZO MAP-GET y EXTEND PARA CAMBIAR ESTILOS DE ALGUNAS TARJETAS USANDO UNA CLASE EXISTENTE*/
 .tarjeta-map {
   background-color: rgba(135, 145, 81, 0.6235294118);
   text-align: center;
@@ -462,7 +415,7 @@ footer {
   border-radius: 10px;
 }
 
-/*UTILIZO MIXIN PARA CAMBIARLE EL COLOR A LAS ULTIMAS 3 TARJETAS*/
+/*UTILIZO MIXIN PARA PONERLE COLOR A LAS ULTIMAS 3 TARJETAS(EN REALIDAD CONSERVO COLOR, UTILIZO MIXIN PARA PRACTICAR)*/
 .tarjeta-mixin {
-  background-color: rgba(189, 203, 110, 0.8509803922);
+  background-color: rgba(135, 145, 81, 0.6235294118);
 }/*# sourceMappingURL=estilos.css.map */

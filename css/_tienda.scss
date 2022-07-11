@@ -10,7 +10,6 @@
     padding: 50px;
     justify-items: center;
     background-image: url(https://img.freepik.com/vector-gratis/pared-piso-madera-superficie-envejecida-realista_107791-682.jpg?t=st=1657488116~exp=1657488716~hmac=2b03aeebbf76f42c785a9bf8f5074d186e5486a5f8ef3d70b38c4af135af9f84&w=996);
-    
 }
 
 /*estilo tarjeta catalogo productos*/
@@ -47,8 +46,4 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-    .header-contenedor{
-        flex-direction: column;
-    }
-    
 }

@@ -43,20 +43,3 @@
     font-size: 23px;
    }
 }
-/* CONFIGURACIÓN RESPONSIVE DESKTOP PARA BARRA MENU Y PARA PAGINA "SOBRE MI"*/
-@media screen and (min-width:391px) and (max-width:1200px) {
-    .header-contenedor{
-        display: grid;
-        grid-template-columns:480px 700px;
-        grid-template-rows: 86px;
-        align-items: center;
-        align-content: center;
-        
-    }  
-    .foto2 {
-        position: relative;
-        left: 750px;
-        top: 300px;
-    }
-    
-}

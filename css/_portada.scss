@@ -30,31 +30,11 @@
             font-size: 45px;
         }
     }
-
 }
 
 /*PAGINA INICIO CONFIGURACIÓN PORTADA  MOBILE RESPONSIVE IPHONE 12PRO*/
 @media screen and (max-width:390px) {
-    /*
-    .portada{
-        background-size: cover;
-        text-align: center;
-        h1{
-            font-size: 50px;  
-            &:hover{
-                font-size: 55px;
-            }
-        }
-        p{
-            font-size: 30px;
-            &:hover{
-                font-size: 32px;
-            }
-        }
-    }
-    */
-.carousel-item{
-    
+  .carousel-item{
     text-align: center;
     text-align-last: center;
     color: beige;
