@@ -1,0 +1,43 @@
+/*CONFIGURACIÓN MENU "SOBRE MI"*/
+
+.main-contenedor{
+    background-image: url(https://img.freepik.com/foto-gratis/taza-te-hierbas-hermosas-flores-esquina-fondo-madera_23-2148092072.jpg?t=st=1657483292~exp=1657483892~hmac=b92de6da056f28a2cd7b6c845bd579bb8d0fa2249e34d1b9d0c3568a0e4470bb&w=740);    
+    background-size: cover;
+    padding: 1.68rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.textoSobreMi{
+    padding-left: 2.22rem;
+    background-color: rgba(130, 70, 70, 0.548);
+    border-radius: 1.11rem;
+}
+
+.titulo-sobremi {
+    text-align: center;
+    font-size: 2.22rem;
+}
+.tamañoCarrusel{
+    margin: 1.67rem;
+    img{
+        width: auto;
+        height: auto;
+    }
+}
+/*CONFIGURACIÓN MENU "SOBRE MI" MOBILE RESPONSIVE IPHONE 12PRO*/
+
+@media screen and (max-width:390px) {
+    .main-contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 1rem;
+    }
+    .textoSobreMi{
+        padding-left: 1.11rem;
+    }
+    .tamañoCarrusel{
+        padding-top: 2.22rem;
+    }
+
+}

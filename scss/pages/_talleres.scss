@@ -1,0 +1,55 @@
+/*CONFIGURACIÓN MENU "TALLERES"*/
+.talleres{
+    background-image: url(https://img.freepik.com/foto-gratis/taza-te-hierbas-hermosas-flores-esquina-fondo-madera_23-2148092072.jpg?t=st=1657483292~exp=1657483892~hmac=b92de6da056f28a2cd7b6c845bd579bb8d0fa2249e34d1b9d0c3568a0e4470bb&w=740);
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    height: 33.33rem; 
+    padding-top: 2.22rem;
+    h1{
+        font-size: 3.33rem;
+        border-top: 0.28rem double black ;
+        border-bottom: 0.28rem double black ;
+        margin-top: 2.78rem;
+        padding: 0.55rem;
+        background-color: rgba(223, 177, 104, 0.781);
+        &:hover{
+            transform: scale(1.20,1.20);
+            transition: 2s;
+        }
+    }
+    p{
+        padding: 0.55rem;        
+        align-items: center;
+        background-color: rgba(223, 177, 104, 0.781);
+        &:hover{
+            transform: scale(1.16,1.16);
+            transition: 2s;
+        }
+    }
+}
+
+
+/*CONFIGURACIÓN MENU "TALLERES" MOBILE RESPONSIVE IPHONE 12PRO*/
+@media screen and (max-width:390px) {
+    .talleres{
+        h1{
+            font-size: 3.33rem;
+            border-top: 0.28rem double black ;
+            &:hover{
+                transform: scale(1.10,1.10);
+                transition: 2s;
+            }
+        }
+        p{
+            margin-left: 1.11rem;
+            margin-right: 1.11rem;
+            font-size: 0.88rem;
+            padding: 0.55rem;
+            border-radius: 1.11rem;
+            &:hover{
+                transform: scale(1.08,1.08);
+            }
+        }
+    }
+}

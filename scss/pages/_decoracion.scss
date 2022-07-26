@@ -1,0 +1,82 @@
+/*CONFIGURACIÓN MENU "DECORACIÓN"*/
+
+.Deco{
+    background-image: url(https://img.freepik.com/vector-gratis/pared-piso-madera-superficie-envejecida-realista_107791-682.jpg?t=st=1657488116~exp=1657488716~hmac=2b03aeebbf76f42c785a9bf8f5074d186e5486a5f8ef3d70b38c4af135af9f84&w=996);
+    padding-top: 2.78rem;
+    h1{
+        text-align: center;
+        align-items: center;
+        border-top: 0.28rem double black ;
+        border-bottom: 0.28rem double black ;
+        padding: 0.55rem;
+        background-color: rgba(223, 177, 104, 0.279);
+    }
+}
+
+.texto1{
+    grid-area: texto1;
+    border: double 0.28rem white;
+    padding: 3.33rem;
+    background-color: rgba(223, 177, 104, 0.279);
+}
+.texto2{
+    @extend.texto1;
+    grid-area: texto2;
+}
+.texto3{
+    @extend.texto1;
+    grid-area: texto3;   
+}
+.deco-img1{
+    grid-area: deco-img1;
+    width: 17.22rem;
+    height: auto;
+    border-radius: 1.11rem;
+}
+.deco-img2{
+    @extend.deco-img1;
+    grid-area: deco-img2;
+    
+}
+.deco-img3{
+    @extend.deco-img1;
+    grid-area: deco-img3;
+    
+}
+#grilla-deco{
+    display: grid;
+    grid-template-areas:
+    "texto1 texto1 deco-img1"
+    "deco-img2 texto2 texto2"
+    "texto3 texto3 deco-img3";
+    grid-template-columns: repeat(3,1fr);
+    grid-row: repeat(3,1/2fr);
+    justify-items: center;
+    align-items: center;
+    padding: 0rem 2.78rem 2.78rem 2.78rem;
+    p{
+        &:hover{
+            background-color: $colorGrillaHover;
+            transition: 1s;
+        }
+    }
+}
+
+/*CONFIGURACIÓN MENU "DECORACIÓN" MOBILE RESPONSIVE IPHONE 12PRO*/
+
+@media screen and (max-width:390px) {
+    #grilla-deco{
+        display: grid;
+        grid-template-areas:
+        "deco-img1"
+        "texto1"   
+        "deco-img2"
+        "texto2"
+        "deco-img3"
+        "texto3";
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 0.55rem;
+        justify-content: center;
+    }  
+}
